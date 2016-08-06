@@ -1,0 +1,5 @@
+-- getMessageFolderTypes()
+SELECT
+	*
+FROM
+	UserMessageFolder;

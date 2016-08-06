@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="main_padding">10dp</dimen>
+
+    <dimen name="item_sep">10dp</dimen>
+    <dimen name="item_indent">6dp</dimen>
+    <dimen name="title_sep">5dp</dimen>
+    <dimen name="title_indent">3dp</dimen>
+
+    <dimen name="button_side">20dp</dimen>
+    <dimen name="button_topbottom">10dp</dimen>
+    <dimen name="tint_side">10dp</dimen>
+    <dimen name="tint_tb">6dp</dimen>
+
+
+
+
+
+
+    <dimen name="normal_text">18sp</dimen>
+    <dimen name="small_text">14sp</dimen>
+
+</resources>

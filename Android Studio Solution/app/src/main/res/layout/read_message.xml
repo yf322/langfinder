@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cs275.langfinder.ReadMessage">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:padding="@dimen/main_padding">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bReply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#33CCFF"
+                        android:paddingBottom="@dimen/button_topbottom"
+                        android:paddingLeft="@dimen/button_side"
+                        android:paddingRight="@dimen/button_side"
+                        android:paddingTop="@dimen/button_topbottom"
+                        android:text="Reply"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/bDeleteMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#FF6666"
+                        android:paddingBottom="@dimen/button_topbottom"
+                        android:paddingLeft="@dimen/button_side"
+                        android:paddingRight="@dimen/button_side"
+                        android:paddingTop="@dimen/button_topbottom"
+                        android:text="Delete"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvSubject"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/item_sep"
+                    android:text="@string/loading"
+                    android:textSize="@dimen/normal_text" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/item_sep"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvFromTo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:textSize="@dimen/normal_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/item_sep"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sent: "
+                        android:textSize="@dimen/normal_text" />
+
+                    <TextView
+                        android:id="@+id/tvDateSent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:textSize="@dimen/normal_text" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvMessageBody"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/item_sep"
+                    android:background="@drawable/tint"
+                    android:paddingBottom="@dimen/tint_tb"
+                    android:paddingLeft="@dimen/tint_side"
+                    android:paddingRight="@dimen/tint_side"
+                    android:paddingTop="@dimen/tint_tb"
+                    android:text="@string/loading"
+                    android:textSize="@dimen/normal_text" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal">
+
+        <include layout="@layout/navbuttons" />
+    </LinearLayout>
+
+</LinearLayout>

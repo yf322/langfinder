@@ -1,0 +1,5 @@
+        UserController userController = new UserController("http://localhost:8080/langfinder.svc");
+        User user = userController.getUser(5);
+        System.out.println("User Id: " + user.getId());
+        System.out.println("User First Name: " + user.getFirstName());
+        System.out.println("User Last Name: " + user.getLastName());

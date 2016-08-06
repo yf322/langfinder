@@ -1,0 +1,5 @@
+-- getLanguages()
+SELECT
+	*
+FROM
+	LanguageInfo;

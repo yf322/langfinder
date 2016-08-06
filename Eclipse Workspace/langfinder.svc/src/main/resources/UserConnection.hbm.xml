@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cs275.langfinder.data.UserConnection" table="UserConnection">
+		<meta attribute="class-description">
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="user1Id" column="user1Id" type="integer" />
+		<property name="user2Id" column="user2Id" type="integer" />
+		<property name="inviteMessage" column="inviteMessage" type="string" />
+		<property name="confirmed" column="confirmed" type="boolean" />
+		<property name="ignored" column="ignored" type="boolean" />
+		<property name="complementUserConnectionId" column="complementUserConnectionId" type="integer" />
+	</class>
+</hibernate-mapping>

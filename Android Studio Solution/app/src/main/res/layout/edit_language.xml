@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="cs275.langfinder.EditLanguage">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:orientation="vertical"
+        android:padding="@dimen/main_padding">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bSaveLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#33FF00"
+                android:onClick="bSaveLanguage"
+                android:paddingBottom="@dimen/button_topbottom"
+                android:paddingLeft="@dimen/button_side"
+                android:paddingRight="@dimen/button_side"
+                android:paddingTop="@dimen/button_topbottom"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/bDeleteLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF6666"
+                android:onClick="bDeleteLanguage"
+                android:paddingBottom="@dimen/button_topbottom"
+                android:paddingLeft="@dimen/button_side"
+                android:paddingRight="@dimen/button_side"
+                android:paddingTop="@dimen/button_topbottom"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bCancelLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF6666"
+                android:onClick="bCancelActivity"
+                android:paddingBottom="@dimen/button_topbottom"
+                android:paddingLeft="@dimen/button_side"
+                android:paddingRight="@dimen/button_side"
+                android:paddingTop="@dimen/button_topbottom"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/item_sep">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language: "
+                android:textSize="@dimen/normal_text" />
+
+            <Spinner
+                android:id="@+id/sEditLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/item_sep">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level: "
+                android:textSize="@dimen/normal_text" />
+
+            <Spinner
+                android:id="@+id/sEditLanguageLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLevelInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="@dimen/title_sep"
+            android:background="@drawable/tint"
+            android:paddingBottom="@dimen/tint_tb"
+            android:paddingLeft="@dimen/tint_side"
+            android:paddingRight="@dimen/tint_side"
+            android:paddingTop="@dimen/tint_tb"
+            android:text="@string/loading"
+            android:textSize="@dimen/small_text" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/item_sep">
+
+            <CheckBox
+                android:id="@+id/cbIsNative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I am a native speaker of this language." />
+
+            <CheckBox
+                android:id="@+id/cbWantsToLearn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I want to learn this language." />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal">
+
+        <include layout="@layout/navbuttons" />
+    </LinearLayout>
+</LinearLayout>

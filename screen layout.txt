@@ -1,0 +1,74 @@
+Removed features:
+    google maps
+	contact info tracking
+	
+
+Main Menu
+	Search
+	Messages
+	My Profile
+	My Friends
+
+User last activity gets updated from most web service calls
+
+Screens:
+	login(username, Password) returns Id
+	getCurrentUserId();
+	Search Screen
+		searchUsers(name, language, language level) sorts by lastactivity
+		getLanguages()
+		getLanguageLevels()
+
+	Profile Screen (My mode: "My Profile", other mode: "View Profile")
+		getUserWithProfile(id)
+		getUsersAreFriends(id,callingUserId)
+		getUserLanguages(userId)
+		removeFriend(userId, callingUserId)
+		actions:
+			link to message user
+			link to invite user
+
+	Friends List Screen
+		getUserInviteProfiles(userId)
+		getUserConnectionProfiles(userId)
+
+	Messages List Screen
+		getMessageFolderTypes()
+		getMessagesForUser(userId, folderType)
+
+	Message Screen
+		getMessage(messageId)
+		deleteMessage(messageId)
+		updateMessageRead(messageId, read)
+		actions:
+			reply
+			delete
+
+	Create Message Screen
+		sendMessage(fromUserId, toUserId, subject, messageContents)
+
+	Invite User Screen
+		inviteUser(fromUserId, toUserId, inviteMessage)
+
+	Accept Invite Screen
+		updateInvite(fromUserId, toUserId, confirmed, ignored)
+		actions:
+			accept invite
+			decline invite
+
+	Edit Profile Screen
+		updateProfile(userId, aboutText, lookingFor)
+
+	Edit Languages Screen
+		Action:
+			Show all lanagues for the user, in a list, on click go to edit
+			add button on this screen
+
+	Edit Language Screen
+		getUserLanguage(userId, lanuageInfoId)
+		deleteUserLanguage(userId, languageInfoId);
+		updateUserLanguage(userId, languageInfoId, wantsToLearn, isNative, languageLevelId)
+		createUserLanguage(userId, languageInfoId, wantsToLearn, isNative, languageLevelId)
+
+	Introduction Instructions
+		just text

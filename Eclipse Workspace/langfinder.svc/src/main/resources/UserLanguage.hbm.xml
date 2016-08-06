@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cs275.langfinder.data.UserLanguage" table="UserLanguage">
+		<meta attribute="class-description">
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="userId" column="userId" type="integer" />
+		<property name="languageId" column="languageId" type="integer" />
+		<property name="wantsToLearn" column="wantsToLearn" type="boolean" />
+		<property name="isNative" column="isNative" type="boolean" />
+		<property name="languageLevelId" column="languageLevelId" type="integer" />
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LangFinder</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_Login">Log In</string>
+    <string name="title_activity_Search">Search</string>
+    <string name="title_activity_MessageList">My Messages</string>
+    <string name="title_activity_Profile">View Profile</string>
+    <string name="title_activity_FriendsList">My Friends</string>
+    <string name="title_activity_EditProfile">Edit Profile</string>
+    <string name="title_activity_CreateMessage">Create Message</string>
+    <string name="title_activity_ReadMessage">Read Message</string>
+    <string name="title_activity_EditLanguage">Edit Language</string>
+    <string name="title_activity_EditLanguages">Edit Languages</string>
+    <string name="title_activity_SignUp">Sign Up</string>
+    <string name="title_activity_CreateInvite">Send Invite</string>
+
+    <string name="loading">Loading&#8230;</string>
+</resources>

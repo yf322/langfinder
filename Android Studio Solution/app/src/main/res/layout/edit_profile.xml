@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="cs275.langfinder.EditProfile">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:orientation="vertical"
+        android:padding="@dimen/main_padding">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bSaveProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#33FF00"
+                android:onClick="bSaveProfile"
+                android:paddingBottom="@dimen/button_topbottom"
+                android:paddingLeft="@dimen/button_side"
+                android:paddingRight="@dimen/button_side"
+                android:paddingTop="@dimen/button_topbottom"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF6666"
+                android:onClick="bCancelActivity"
+                android:paddingBottom="@dimen/button_topbottom"
+                android:paddingLeft="@dimen/button_side"
+                android:paddingRight="@dimen/button_side"
+                android:paddingTop="@dimen/button_topbottom"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/title_indent"
+            android:layout_marginTop="@dimen/item_sep"
+            android:text="About me: "
+            android:textSize="@dimen/normal_text" />
+
+        <EditText
+            android:id="@+id/etAboutText"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/title_sep"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:paddingBottom="@dimen/tint_tb"
+            android:paddingLeft="@dimen/tint_side"
+            android:paddingRight="@dimen/tint_side"
+            android:paddingTop="@dimen/tint_tb"
+            android:textSize="@dimen/normal_text" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/title_indent"
+            android:layout_marginTop="@dimen/item_sep"
+            android:text="I&apos;m looking for: "
+            android:textSize="@dimen/normal_text" />
+
+        <EditText
+            android:id="@+id/etLookingForText"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/title_sep"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:paddingBottom="@dimen/tint_tb"
+            android:paddingLeft="@dimen/tint_side"
+            android:paddingRight="@dimen/tint_side"
+            android:paddingTop="@dimen/tint_tb"
+            android:textSize="@dimen/normal_text" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/item_sep">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#33CCFF"
+                android:onClick="bEditLanguages"
+                android:paddingBottom="@dimen/button_topbottom"
+                android:paddingLeft="@dimen/button_side"
+                android:paddingRight="@dimen/button_side"
+                android:paddingTop="@dimen/button_topbottom"
+                android:text="Edit Languages"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal">
+
+        <include layout="@layout/navbuttons" />
+    </LinearLayout>
+
+</LinearLayout>

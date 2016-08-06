@@ -1,0 +1,42 @@
+getCurrentUserId()
+
+
+----- SQL -----
+
+login(email, passwordHash)
+createUser(email, passwordHash, firstName, lastName)
+getUser(email)
+updateUser(userId, email, passwordHash, firstName, lastName)
+updateUserLastActive(userId)
+
+searchUsers(name, languageInfoId, languageLevelId) sorts by lastActiveUTC
+getLanguages()
+getLanguageLevels()
+
+getUserWithProfile(userId)
+getUsersAreFriends(fromUserId, otherUserId)
+getUserLanguages(userId)
+removeFriend(fromUserId, otherUserId)
+
+getUserInviteProfiles(userId)
+getUserConnectionProfiles(userId)
+
+getMessageFolderTypes()
+getMessagesForUser(owningUserId, userMessageFolderId)
+
+getMessage(messageId)
+updateMessageRead(messageId, isRead)
+deleteMessage(messageId)
+
+sendMessage(fromUserId, toUserId, subject, message)
+
+inviteUser(fromUserId, toUserId, inviteMessage)
+
+updateInvite(fromUserId, toUserId, confirmed, ignored)
+
+updateProfile(userId, aboutText, lookingFor)
+
+getUserLanguage(userId, lanuageInfoId)
+deleteUserLanguage(userId, languageInfoId);
+updateUserLanguage(userId, languageInfoId, wantsToLearn, isNative, languageLevelId)
+createUserLanguage(userId, languageInfoId, wantsToLearn, isNative, languageLevelId)

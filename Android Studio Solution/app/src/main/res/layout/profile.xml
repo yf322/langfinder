@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="cs275.langfinder.Profile">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:padding="@dimen/main_padding">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bEditProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#33CCFF"
+                        android:onClick="bEditProfile"
+                        android:paddingBottom="@dimen/button_topbottom"
+                        android:paddingLeft="@dimen/button_side"
+                        android:paddingRight="@dimen/button_side"
+                        android:paddingTop="@dimen/button_topbottom"
+                        android:text="Edit"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/bMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#33CCFF"
+                        android:onClick="bMessage"
+                        android:paddingBottom="@dimen/button_topbottom"
+                        android:paddingLeft="@dimen/button_side"
+                        android:paddingRight="@dimen/button_side"
+                        android:paddingTop="@dimen/button_topbottom"
+                        android:text="Message"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/bInvite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#33CCFF"
+                        android:onClick="bInviteProfile"
+                        android:paddingBottom="@dimen/button_topbottom"
+                        android:paddingLeft="@dimen/button_side"
+                        android:paddingRight="@dimen/button_side"
+                        android:paddingTop="@dimen/button_topbottom"
+                        android:text="Invite"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/bRemove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#FF6666"
+                        android:onClick="bRemove"
+                        android:paddingBottom="@dimen/button_topbottom"
+                        android:paddingLeft="@dimen/button_side"
+                        android:paddingRight="@dimen/button_side"
+                        android:paddingTop="@dimen/button_topbottom"
+                        android:text="Remove"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvNameProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/item_sep"
+                    android:text="@string/loading"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/loading"
+                    android:textSize="12sp"
+                    android:id="@+id/tvLastActive"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/item_sep"
+                    android:text="About me: "
+                    android:textSize="@dimen/normal_text" />
+
+                <TextView
+                    android:id="@+id/tvAboutText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="@dimen/title_sep"
+                    android:background="@drawable/tint"
+                    android:paddingBottom="@dimen/tint_tb"
+                    android:paddingLeft="@dimen/tint_side"
+                    android:paddingRight="@dimen/tint_side"
+                    android:paddingTop="@dimen/tint_tb"
+                    android:text="@string/loading"
+                    android:textSize="@dimen/small_text" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/item_sep"
+                    android:text="I&apos;m looking for: "
+                    android:textSize="@dimen/normal_text" />
+
+                <TextView
+                    android:id="@+id/tvLookingForText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="@dimen/title_sep"
+                    android:background="@drawable/tint"
+                    android:paddingBottom="@dimen/tint_tb"
+                    android:paddingLeft="@dimen/tint_side"
+                    android:paddingRight="@dimen/tint_side"
+                    android:paddingTop="@dimen/tint_tb"
+                    android:text="@string/loading"
+                    android:textSize="@dimen/small_text" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/item_sep"
+                    android:text="My languages:"
+                    android:textSize="@dimen/normal_text" />
+
+                <ListView
+                    android:id="@+id/lvProfileLanguages"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/title_sep" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal">
+
+        <include layout="@layout/navbuttons" />
+    </LinearLayout>
+
+</LinearLayout>

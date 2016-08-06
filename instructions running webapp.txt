@@ -1,0 +1,17 @@
+First, get latest source code
+
+1) then go to command prompt.
+2) cd into directory: Eclipse Workspace\langfinder.common
+3) run: mvn clean package install
+4) cd into directory: Eclipse Workspace\langfinder.svc
+5) run: mvn clean package jetty:run
+
+Now from android studio, the webservice calls using service endpoint: http://localhost:8080
+will work.
+
+
+to test, you can use 
+
+http://localhost:8080/getCurrentUserId.jsp
+and
+http://localhost:8080/getLanguages.jsp

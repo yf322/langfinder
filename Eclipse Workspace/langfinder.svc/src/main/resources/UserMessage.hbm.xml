@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cs275.langfinder.data.UserMessage" table="UserMessage">
+		<meta attribute="class-description">
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="userMessageFolderId" column="userMessageFolderId" type="integer" />
+		<property name="owningUserId" column="owningUserId" type="integer" />
+		<property name="senderUserId" column="senderUserId" type="integer" />
+		<property name="receiverUserId" column="receiverUserId" type="integer" />
+		<property name="dateSentUTC" column="dateSentUTC" type="date" />
+		<property name="subject" column="subject" type="string" />
+		<property name="message" column="message" type="string" />
+		<property name="isDeleted" column="isDeleted" type="boolean" />
+		<property name="isRead" column="isRead" type="boolean" />
+
+	</class>
+</hibernate-mapping>

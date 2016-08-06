@@ -1,0 +1,5 @@
+-- getLanguageLevels()
+SELECT
+	*
+FROM
+	LanguageLevel;

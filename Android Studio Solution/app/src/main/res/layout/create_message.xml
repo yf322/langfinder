@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="cs275.langfinder.CreateMessage">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:orientation="vertical"
+        android:padding="@dimen/main_padding">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnsend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#33FF00"
+                android:onClick="bSendInvite"
+                android:paddingBottom="@dimen/button_topbottom"
+                android:paddingLeft="@dimen/button_side"
+                android:paddingRight="@dimen/button_side"
+                android:paddingTop="@dimen/button_topbottom"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF6666"
+                android:onClick="bCancelActivity"
+                android:paddingBottom="@dimen/button_topbottom"
+                android:paddingLeft="@dimen/button_side"
+                android:paddingRight="@dimen/button_side"
+                android:paddingTop="@dimen/button_topbottom"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_sep"
+            android:longClickable="false"
+            android:nestedScrollingEnabled="false"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To: "
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loading"
+                android:textSize="@dimen/normal_text" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/item_sep"
+            android:text="Subject: "
+            android:textSize="@dimen/normal_text" />
+
+        <EditText
+            android:id="@+id/edtSubject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_sep"
+            android:background="@drawable/border"
+            android:inputType="textMultiLine"
+            android:paddingBottom="@dimen/tint_tb"
+            android:paddingLeft="@dimen/tint_side"
+            android:paddingRight="@dimen/tint_side"
+            android:paddingTop="@dimen/tint_tb"
+            android:singleLine="true"
+            android:textSize="@dimen/normal_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/item_sep"
+            android:text="Message: "
+            android:textSize="@dimen/normal_text" />
+
+        <EditText
+            android:id="@+id/edtText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/title_sep"
+            android:background="@drawable/border"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:paddingBottom="@dimen/tint_tb"
+            android:paddingLeft="@dimen/tint_side"
+            android:paddingRight="@dimen/tint_side"
+            android:paddingTop="@dimen/tint_tb"
+            android:textSize="@dimen/normal_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal">
+
+        <include layout="@layout/navbuttons" />
+    </LinearLayout>
+</LinearLayout>
